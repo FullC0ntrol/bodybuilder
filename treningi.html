@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <ul class="nav-links">
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="treningi.html">Treningi</a></li>
+            <li><a href="kalendarz.html">Kalendarz</a></li>
+            <li><a href="inProgres.html">Plan na rozbudowę</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <header class="site-header">
+        <div class="logo-container">
+            <img src="images/logo2.png" alt="Body Builder Logo" class="logo">
+            <h1 class="site-title">Body Builder</h1>
+        </div>
+    </header>
+    <main>
+        <section class="exercises">
+            <div class="exercise-card" id="wyciskanie" onclick="openSidebar('wyciskanie')">
+                <a href="#"><img src="images/lawka.jpg" alt="wyciskanie">
+                <h3>Wyciskanie leżąc <span class="nazwacw">KLATA</span></h3></a>
+            </div>
+
+            <div class="exercise-card" id="biceps" onclick="openSidebar('biceps')">
+                <a href="#">
+                    <img src="images/bicek.jpg" alt="bicek">
+                    <h3>Uginanie ramion <span class="nazwacw">BICEPS</span></h3>
+                </a>
+            </div>
+
+            <div class="exercise-card" id="triceps" onclick="openSidebar('triceps')">
+                <a href="#">
+                    <img src="images/tricek.jpg" alt="triceps">
+                    <h3>Uginanie ramion <span class="nazwacw">TRICEPS</span></h3>
+                </a>
+            </div>
+            <div class="exercise-card" id="przysiad" onclick="openSidebar('przysiad')">
+                <a href="#">
+                    <img src="images/przysiad.jpg" alt="przysiad">
+                    <h3>Przysiad <span class="nazwacw">NOGI</span></h3>
+                </a>
+            </div>
+            <div class="exercise-card" id="martwy" onclick="openSidebar('martwyciag')">
+                <a href="#">
+                    <img src="images/martwy.jpg" alt="martwy">
+                    <h3>Martwy ciąg <span class="nazwacw">PLECY</span></h3>
+                </a>
+            </div>
+            
+        </section>
+    </main>
+    <aside class="sidebar" id="exerciseSidebar">
+        <button class="close-btn" onclick="closeSidebar()">&#10006;</button>
+        <div class="sidebar-content">
+            <h2 id="exercise-title">Wyciskanie leżąc</h2>
+            <p id="exercise-description">
+                Wyciskanie leżąc to jedno z podstawowych ćwiczeń siłowych rozwijające klatkę piersiową, triceps i barki.
+            </p>
+        </div>
+    </aside>
+    <script src="script.js"></script>
+</body>
+</html>
